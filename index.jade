@@ -1,0 +1,147 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    link(rel="stylesheet", href="style.css")
+    title Document
+  body
+
+    .background-header
+      header.main-header
+        img(src="/src/img/vasta.png", alt="")#logo
+        nav
+          ul.nav-links
+           li
+             a(href="#sobre") Sobre
+           li
+             a(href="#portfolio") Portfólio
+           li
+              a(href="#depoimentos")  Depoimentos
+            li
+             a(href="#contato")  Contato
+            li
+             img(src="/src/img/search.png", alt="")
+
+      section.hero
+        h1 Título Banner
+        h2 Subtítulo Banner
+        button Botão de Click
+
+    section.sobre
+      h1 Sobre
+      .sobre-items
+        .sobre-left-1
+          img(src="/src/img/sobre-1.png", alt="pessoas com computador")
+        .sobre-right-1
+          p Lorem ipsum dolor sit amet consectetur adipisicing elit. At odio repellendus voluptatum quos nulla fuga ab, vel cumque ea delectus saepe beatae, officiis veniam laboriosam sequi excepturi tempore itaque. Repudiandae tenetur sunt labore officia porro incidunt maxime corporis illum molestias reprehenderit quas optio atque ullam odit at quaerat suscipit rerum aliquid eveniet, animi alias. Facere illo id corrupti mollitia. Adipisci, rem doloribus porro inventore illum accusamus animi atque harum deserunt?
+          button Saiba Mais
+      .sobre-items
+        .sobre-right-2
+          p Lorem ipsum dolor sit amet consectetur adipisicing elit. At odio repellendus voluptatum quos nulla fuga ab, vel cumque ea delectus saepe beatae, officiis veniam laboriosam sequi excepturi tempore itaque. Repudiandae tenetur sunt labore officia porro incidunt maxime corporis illum molestias reprehenderit quas optio atque ullam odit at quaerat suscipit rerum aliquid eveniet, animi alias. Facere illo id corrupti mollitia. Adipisci, rem doloribus porro inventore illum accusamus animi atque harum deserunt?
+        .sobre-left-2
+          img(src="/src/img/sobre-2.png", alt="pessoas")
+
+    section.portfolio
+      h1 Portfólio
+      .galeria
+        .img-container
+          img(src="/src/img/portfolio-1.jpg", alt="edifício 1")
+        .img-container
+          img(src="/src/img/portfolio-2.jpg", alt="edifício 2")
+        .img-container
+          img(src="/src/img/portfolio-3.jpg", alt="edifício 3")
+        .img-container
+          img(src="/src/img/portfolio-4.jpg", alt="edifício 4")
+        .img-container
+          img(src="/src/img/portfolio-5.jpg", alt="edifício 5")
+        .img-container
+          img(src="/src/img/portfolio-6.jpg", alt="edifício 6")
+      .modal
+        img(src="", alt="").full-img
+        p.caption 
+      .center
+        button.button-div carregar mais projetos
+    
+    section.depoimentos
+      .container-dep
+        .item-dep
+          .star-box-dep
+            img(src="/src/img/estrelas.png", alt="")
+            .box-dep
+          .text-dep
+              h3 Lorem, ipsum dolor.
+              p Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea culpa officia minima iste aspernatur tenetur obcaecati impedit provident nulla fugiat.
+        .item-dep
+          .star-box-dep
+            img(src="/src/img/estrelas.png", alt="")
+            .box-dep
+          .text-dep
+              h3 Lorem, ipsum dolor.
+              p Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea culpa officia minima iste aspernatur tenetur obcaecati impedit provident nulla fugiat.
+        .item-dep
+          .star-box-dep
+            img(src="/src/img/estrelas.png", alt="")
+            .box-dep
+          .text-dep
+              h3 Lorem, ipsum dolor.
+              p Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea culpa officia minima iste aspernatur tenetur obcaecati impedit provident nulla fugiat.
+
+    section.contato
+       h1 Contato
+       .form
+         .top-form
+           input(type="text", placeholder="Nome")
+           input(type="text", placeholder="Sobrenome")
+           input(type="email", placeholder="Email")
+         .bottom-form
+           .leftb-form
+              textarea(type="text", placeholder="Mensagem", rows="7", )
+           .rightb-form
+              input(type="tel", placeholder="Telefone")
+              .button-form
+                p Todos os dados são guardados de forma segura, saiba mais aqui.
+                button enviar
+    
+    section.footer
+      .box-footer
+        .left-foot
+          h1 se inscreva pare receber nosso newsteller
+          .upleft-foot
+            input(type="email", placeholder="Email")
+            button inscrever-se
+          .downleft-foot
+            h1 portfólio
+            .links-foot
+              img(src="/src/img/portfolio-1.jpg", alt="")
+              img(src="/src/img/portfolio-2.jpg", alt="")
+              img(src="/src/img/portfolio-3.jpg", alt="")
+              img(src="/src/img/portfolio-4.jpg", alt="")
+        .right-foot
+          .rightup-foot
+           .menu-foot
+            h1 menu
+            ul
+             li
+               a(href="#sobre") Sobre
+             li
+               a(href="#portfolio") Portfólio
+             li
+                a(href="#depoimentos")  Depoimentos
+              li
+               a(href="#contato")  Contato
+           .sobre-foot
+            h1 sobre
+            ul
+             li
+               a(href="#") Política de Privacidade
+             li
+               a(href="#") Termos de Uso
+          .rightdown-foot
+            img(src="/src/img/vasta-white.png", alt="")
+
+          
+
+          
+
+  script(src="app.js")    

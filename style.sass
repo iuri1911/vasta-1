@@ -1,0 +1,427 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap')
+*
+  margin: 0
+  padding: 0
+  box-sizing: border-box
+
+html
+  font-size: 62.5%
+  scroll-behavior: smooth
+
+body
+  font-family: 'Roboto', sans-serif
+
+h1, h2, button
+  text-transform: uppercase
+  font-weight: 400
+  color: #3B3B3B
+
+li, button, label, input
+  font-size: 1.4rem
+
+input, button:focus
+  outline: none
+
+input, textarea
+  width: 100%
+  font-weight: bold
+  font-size: 2rem
+  border: 0.2rem solid #787878
+  padding: 1.5rem
+  margin: 0 4rem
+  border-radius: none
+
+h1
+  font-size: 5rem
+  padding: 2rem 0
+
+h2
+  font-size: 3.5rem
+
+p
+  font-size: 1.7rem
+  font-weight: 500
+  line-height: 3.5rem
+
+button
+  margin: 1.5rem 0
+  padding: 2rem 2rem
+  background: #577192
+  border: none
+  color: white
+  font-size: 2rem
+  cursor: pointer
+  transition: background 0.6s cubic-bezier(0.76, 0, 0.24, 1)
+
+button:hover
+  background: #334153
+
+.center
+  display: flex
+  justify-content: center
+  align-items: center
+
+  //navbar
+
+.background-header
+  background: url(/src/img/city-back.png)
+  min-height: 75vh
+  background-repeat: no-repeat
+  background-size: cover
+  background-position: center
+
+li, a
+  font-family: 'Roboto', sans-serif
+  font-size: 1.5rem
+  font-weight: bold
+  color: #172129
+  text-decoration: none
+  list-style: none
+
+header
+  display: flex
+  justify-content: space-between
+  align-items: center
+  padding: 2rem 5%
+
+#logo
+  cursor: pointer
+  transition: transform .2s ease-in-out 0.1s
+
+#logo:hover
+  transform: scale(1.2)
+
+.nav-links li
+  display: inline-block
+  padding: 0 2rem
+
+.nav-links a
+  transition: all 0.3s ease 0s
+
+.nav-links a:hover
+  color: #172129a4
+
+.nav-links img
+  cursor: pointer
+
+  //hero
+
+.hero
+  padding: 10rem 5%
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: flex-start
+  text-align: center
+
+.hero h2
+  color: #676767
+
+.hero button
+  margin: 1.5rem 0
+  padding: 2rem 2rem
+  background: #26B522
+  border: none
+  color: white
+  font-size: 2rem
+  cursor: pointer
+  transition: background 0.6s cubic-bezier(0.76, 0, 0.24, 1)
+
+.hero button:hover
+  background: #186b15
+
+  //Sobre
+
+.sobre
+  padding: 2rem 5%
+
+.sobre h1
+  flex-grow: 4
+  text-align: center
+
+.sobre-items
+  width: 100%
+  display: flex
+  flex-wrap: wrap
+  justify-content: flex-start
+  flex-direction: row
+
+.sobre-items:nth-child(3)
+  justify-content: flex-end
+  padding-top: 2rem
+
+.sobre-left-1
+  flex: 1
+
+.sobre-right-1
+  flex: 3
+
+.sobre-left-2
+  flex: 1
+
+.sobre-right-2
+  flex: 3
+
+.sobre-items button
+  background: #577192
+  padding: 1.5rem 3rem
+
+.sobre-items button:hover
+  background-color: #334153
+
+.sobre-left-1 img
+  padding-right: 4rem
+  width: 43rem
+
+.sobre-left-2 img
+  padding-left: 4rem
+  width: 43rem
+
+  //portfolio
+
+.portfolio
+  padding: 2rem 10%
+  min-height: 100vh
+
+.portfolio h1
+  text-align: center
+  padding-bottom: 6rem
+
+.galeria
+  display: grid
+  grid-template-columns: repeat(3, 1fr)
+  grid-gap: 5%
+
+.img-container
+  overflow: hidden
+
+.img-container img
+  width: 100%
+  height: 100%
+  object-fit: cover
+  transition: all 0.3s ease-in-out
+  cursor: pointer
+
+.galeria img:hover
+  transform: scale(1.2)
+
+.modal
+  background: rgba(0, 0, 0, 0.6)
+  position: fixed
+  top: 0
+  left: 0
+  width: 100%
+  height: 100%
+  opacity: 0
+  pointer-events: none
+  transition: 0.25s ease-out
+
+.modal.open
+  opacity: 1
+  pointer-events: all
+
+.full-img
+  position: absolute
+  top: 50%
+  left: 50%
+  transform: translate(-50%,-50%) scale(0.5)
+  transition: all 0.25s ease-out
+
+.full-img.open
+  transform: translate(-50%,-50%) scale(0.5)
+
+.modal p
+  color: white
+  font-size: 4rem
+  position: absolute
+  bottom: 5%
+  left: 50%
+  transform: translate(-50%, -5%)
+
+.portfolio button
+  padding: 2.7rem
+
+.center
+  padding-top: 6rem
+
+  //depoimentos
+
+.depoimentos
+  padding: 2rem 10%
+
+.container-dep
+  display: flex
+  justify-content: center
+  align-items: center
+  flex-wrap: nowrap
+
+.item-dep
+  display: flex
+  justify-content: center
+  align-items: flex-end
+
+.depoimentos p
+  font-size: 1.5rem
+  line-height: 2.7rem
+  flex-basis: 50%
+
+.star-box-dep
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+
+.box-dep
+  background-color: black
+  width: 100px
+  height: 100px
+  margin: 0 2rem
+
+.depoimentos img
+  padding-bottom: 1rem
+  padding-left: 0.5rem
+  width: 80%
+
+  //contato
+
+.contato
+  padding: 2rem 12%
+
+.contato h1
+  text-align: center
+
+.contato textarea::placeholder
+  font-size: 1.7rem
+  font-family: 'Roboto', sans-serif
+
+.form
+  width: 100%
+  margin: 2.5rem 0
+
+.top-form
+  display: flex
+  justify-content: space-between
+  width: 100%
+  min-height: 65px
+  margin: 3rem 0
+
+.bottom-form
+  display: flex
+  justify-content: space-between
+  width: 100%
+  min-height: 65px
+
+.leftb-form
+  flex-basis: 50%
+
+.rightb-form
+  display: flex
+  flex-basis: 40%
+  flex-direction: column
+  justify-content: center
+  align-items: center
+  padding: 0 4rem
+
+.button-form
+  display: flex
+  justify-content: center
+  align-items: center
+
+.button-form button
+  flex-basis: 40%
+
+.button-form p
+  padding-right: 4rem
+  font-size: 1.7rem
+
+  //footer
+
+.footer
+  background-color: #333333
+  padding: 3rem 5%
+  display: flex
+
+.footer h1
+  color: white
+  padding: 0
+  font-size: 2.5rem
+
+.footer a,li
+  color: white
+  padding: 1rem 0
+
+.box-footer
+  display: flex
+  min-height: 100%
+  justify-content: flex-start
+  flex-wrap: nowrap
+  align-items: stretch
+  align-content: stretch
+
+.box-footer,.left-foot,.right-foot
+  border: 0.2rem solid white
+  display: flex
+  width: 100%
+
+.left-foot
+  display: flex
+  flex-flow: column
+  padding: 3rem
+
+.upleft-foot
+  display: flex
+  flex-flow: row
+  justify-content: center
+  align-items: center
+
+.left-foot h1
+  font-size: 2.7rem
+  padding-bottom: 3rem
+
+.upleft-foot input
+  margin: 0
+  height: 6rem
+  border: none
+  border-radius: 0
+
+.upleft-foot button
+  height: 6rem
+  width: 50%
+  background: #26B522
+  border-radius: 0
+  font-size: 1.5rem
+
+.downleft-foot h1
+  padding: 4rem 0 1rem 0
+
+.links-foot
+  display: flex
+  justify-content: space-between
+  padding: 0 5rem 1rem  0
+
+.links-foot img
+  height: 10rem
+  padding: 0 2rem
+
+.right-foot
+  display: flex
+  flex-flow: column
+  align-items: center
+
+.rightup-foot
+  width: 100%
+  display: flex
+  flex-flow: row
+  justify-content: space-around
+
+.menu-foot,.sobre-foot
+  display: flex
+  flex-flow: column
+  padding-top: 3rem
+
+.menu-foot,.sobre-foot
+  h1
+    padding-bottom: 2rem
+
+.rightdown-foot
+  padding-top: 7rem
